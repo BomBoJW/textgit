@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<title>小练习3</title>
+<head>
+<!--应用外部jquery,css-->
+
+<link rel="stylesheet" type="text/css" href="css/style1.css" />
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<link type="text/css" rel="stylesheet" href="css/carousel.css">
+
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+<!---->
+<style>
+#a li{
+float:left;
+
+}
+</style>
+<script type="text/javascript">
+$(function(){   
+		  
+	var interval;
+	$(".container img").click(function cover(){
+			$(this).addClass("zoom").fadeOut(700,append);		
+			function append(){
+			$(this).removeClass("zoom").appendTo(".container").show();
+			var name = $(".container").children("img").first().attr("alt");
+			 $(".name p").text("No "+name);
+			}	
+	  
+	})
+	
+	function auto(){
+			var play = $(".container").children("img").first();
+			play.addClass("zoom").fadeOut(700,append);		
+			function append(){
+			$(this).removeClass("zoom").appendTo(".container").show();
+			var name = $(this).parent().children("img").first().attr("alt");
+			 $(".name p").text("No "+name);
+			}
+			interval = setTimeout(auto,5000);
+	}
+	
+	$(".container img").hover(function(){
+			stopPlay();
+	},function(){
+			interval = setTimeout(auto,5000);
+	})
+	
+	function stopPlay(){
+		clearTimeout(interval)
+	}
+	auto();
+					
+})
+</script>
+<!---->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+		.caroursel{margin:50px auto;}
+		body{background-color: #2A2A2A;}
+	</style>
+	<!--[if IE]>
+		<script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+
+
+
+</head>
+<body>
+
+<div class="header body1" align="center">
+<h1><a href="小练习1.html">网页小练习</a></h1>
+</div>
+
+<div class="row">
+<div class="menu">
+<div id="a">
+<ul>
+<li><a href="https://www.baidu.com">百度</a></li>
+<li><a href="小练习3.html">GTA V</a></li>
+<li><a href="https://jquery.com">Jquery</a></li>
+<li><a href="小练习2.html">Paragon</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-s-9" style="background:url">
+<h1 style="color:#FFFFFF">GTA V</h1>
+<p style="color:#FFFFFF">GTA V:游戏截图</p>
+
+<div class="container" style="margin-top:50px"> 
+	            <img src="image/2016-11-20 (51).png" width = "100%" height="100%" alt="1">
+	            <img src="image/2016-11-20 (52).png" width = "100%" height="100%" alt="2">
+				<img src="image/2016-11-20 (53).png" width = "100%" height="100%" alt="3">
+				<img src="image/2016-11-20 (54).png" width = "100%" height="100%" alt="4">
+				<img src="image/2016-11-20 (55).png" width = "100%" height="100%" alt="5">
+				<img src="image/2016-11-20 (56).png" width = "100%" height="100%" alt="6">
+				<img src="image/2016-11-20 (57).png" width = "100%" height="100%" alt="7">
+				<img src="image/2016-11-20 (58).png" width = "100%" height="100%" alt="8">
+				<img src="image/2016-11-20 (59).png" width = "100%" height="100%" alt="9">
+				<img src="image/2016-11-20 (60).png" width = "100%" height="100%" alt="10">
+				<img src="image/2016-11-20 (61).png" width = "100%" height="100%" alt="11">
+				<img src="image/2016-11-20 (62).png" width = "100%" height="100%" alt="12">
+				<img src="image/2016-11-20 (63).png" width = "100%" height="100%" alt="13">
+</div>
+	<div class="name">
+<p>No 1</p>
+</div>       
+
+<!---->
+<!--<img src="img/wallpaper4.jpg" width="460" height="345">-->
+
+
+</div>
+
+</div>
+
+<!--底部-->
+<div class="body4">
+		<div class="main zerogrid">
+			<article id="content2">
+				<div class="wrapper row">
+					<section class="col-1-4">
+					<div class="wrap-col">
+						<h4>Why Us?</h4>
+						<ul class="list1">
+							<li><a href="#">Hello!</a></li>
+							<li><a href="#">H1Z1</a></li>
+							<li><a href="#">Paragon</a></li>
+							<li><a href="#">Warframe</a></li>
+						</ul>
+					</div>
+					</section>
+					<section class="col-1-4">
+					<div class="wrap-col">
+						<h4>Address</h4>
+						<ul class="address">
+							<li><span>Country:</span>CN</li>
+							<li><span>City:</span>Cheng Du</li>
+							<li><span>Phone:</span>8 800 154-45-67</li>
+							<li><span>Email:</span><a href="mailto:">1403264381@qq.com</a></li>
+						</ul>
+					</div>
+					</section>
+					<section class="col-1-4">
+					<div class="wrap-col">
+						<h4>Follow Us</h4>
+						<ul id="icons">
+							<li><a href="#"><img src="image/icon1.jpg" alt="">Facebook</a></li>
+							<li><a href="#"><img src="image/icon2.jpg" alt="">Twitter</a></li>
+							<li><a href="#"><img src="image/icon3.jpg" alt="">LinkedIn</a></li>
+							<li><a href="#"><img src="image/icon4.jpg" alt="">Delicious</a></li>
+						</ul>
+					</div>
+					</section>
+					<section class="col-1-4">
+					<div class="wrap-col">
+						<h4>Newsletter</h4>
+						<form id="newsletter" method="post">
+							<div>
+								<div class="wrapper">
+									<input class="input" type="text" value="Type Your Email Here"  onblur="if(this.value=='') this.value='Type Your Email Here'" onfocus="if(this.value =='Type Your Email Here' ) this.value=''" >
+								</div>
+								<a href="#" class="button" onclick="document.getElementById('newsletter').submit()">Subscribe</a>
+							</div>
+						</form>
+					</div>
+					</section>
+				</div>
+			</article>
+		</div>
+	</div>
+<!---->
+<div class="footer">
+<p>调整浏览器窗口大小查看内容变化。</p>
+</div>
+
+</body>
+</html>

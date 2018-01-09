@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<title>小练习</title>
+<head>
+<!--应用外部jquery,css-->
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<link type="text/css" rel="stylesheet" href="css/carousel.css">
+
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+		.caroursel{margin:50px auto;}
+		body{background-color: #2A2A2A;}
+	</style>
+	<!--[if IE]>
+		<script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+
+<script> 
+//缩放动画
+$(document).ready(function(){
+  $("a#h1z1").click(function(){
+    var div=$("p.p1");
+    div.animate({height:'300px',opacity:'0.4'});
+    div.animate({width:'300px',opacity:'0.8'});
+    div.animate({height:'100px',opacity:'0.4'});
+    div.animate({width:'100px',opacity:'0.8'});
+	div.animate({width:"100%",opacity:'0.4'});
+  });
+});
+</script> 
+<script>
+$(document).ready(function(){
+  $("button#btn").click(function(){
+    $("div#suofang").toggle("slow");//toggle来切换hide与show
+  });
+});
+</script>
+</head>
+<body>
+
+<div class="header body1" align="center">
+<h1><a href="小练习1.html">网页小练习</a></h1>
+</div>
+
+<div class="row">
+<div class="col-2 col-s-3 menu">
+<ul>
+<li><a href="https://www.baidu.com">百度</a></li>
+<li><a href="小练习3.html">GTA V</a></li>
+<li><a href="https://jquery.com">Jquery</a></li>
+<li><a href="小练习2.html">Paragon</a></li>
+</ul>
+<div class="aside">
+<button id="btn" class="btn btn-block btn-primary">隐藏/显示</button>
+<div id="suofang">
+<h2>激情?</h2>
+<p>这里就是你的战场.</p>
+<h2>乐趣?</h2>
+<p>无处不在，无欢不乐.</p>
+<h2>更多?</h2>
+<p>敬请期待！！！</p>
+</div>
+</div>
+</div>
+
+<div class="col-10 col-s-9">
+<h1 style="color:black">H1Z1</h1>
+<p class="p1">Parachute in and hit the ground running. Whether in solo, 2-player, or 5-player mode, grab weapons and gear, and listen closely for those toxic gas warning sirens. At some point it all comes down to <a id="h1z1" href="https://www.h1z1.com"><b>KILL OR BE KILLED!</b></a></p>
+<P class="p1">
+Parachute in and hit the ground running. Whether in solo, 2-player, or 5-player mode, grab weapons and gear, and listen closely for those toxic gas warning sirens. At some point it all comes down to 
+</p>
+<p class="p1" style="color:red;"><b><i>KILL OR BE KILLED!
+
+HEAD OUT GUNS
+BLAZING
+OR CAMP OUT IN A BLACKBERRY BUSH. IT'S YOUR CHOICE IN THESE CHAOTIC MATCHES OF SKILL AND WIT.</i></b></P>
+
+<!--图片轮转-->
+<div class="wrapper row">
+		<article class="jq22-container">
+		
+		<div class = "caroursel poster-main" data-setting = '{
+	        "width":1000,
+	        "height":270,
+	        "posterWidth":640,
+	        "posterHeight":270,
+	        "scale":0.8,
+	        "dealy":"2000",
+	        "algin":"middle"
+	    }'>
+	        <ul class = "poster-list">
+	            <li class = "poster-item"><img src="image/wallpaper1.jpg" width = "100%" height="100%"></li>
+	            <li class = "poster-item"><img src="image/wallpaper2.jpg" width = "100%" height="100%"></li>
+	            <li class = "poster-item"><img src="image/wallpaper3.jpg" width = "100%" height="100%"></li>
+	            <li class = "poster-item"><img src="image/H1Z13.png" width = "100%" height="100%"></li>
+				<li class = "poster-item"><img src="image/wallpaper9.jpg" width = "100%" height="100%"></li>
+				<li class = "poster-item"><img src="image/wallpaper10.jpg" width = "100%" height="100%"></li>
+				<li class = "poster-item"><img src="image/wallpaper11.jpg" width = "100%" height="100%"></li>
+	            
+	        </ul>
+	        
+            
+	        <div class = "poster-btn poster-prev-btn"></div>
+	        <div class = "poster-btn poster-next-btn"></div>
+
+	    </div>
+		
+	</article>
+	
+	<script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/jquery.carousel.js"></script>
+    <script>
+        Caroursel.init($('.caroursel'))
+    </script>			
+</div>
+
+<!---->
+<!--<img src="img/wallpaper4.jpg" width="460" height="345">-->
+<div id="jianjie">
+<h1>简介</h1>
+<p>这里用的比较杂，还有些效果没搞明白，大多都是模仿，加上自己的想法，待我慢慢完善......</p>
+</div>
+
+</div>
+
+</div>
+
+<!--底部-->
+<div class="body4">
+		<div class="main zerogrid">
+			<article id="content2">
+				<div class="wrapper row">
+					<section class="col-1-4">
+					<div class="wrap-col">
+						<h4>Why Us?</h4>
+						<ul class="list1">
+							<li><a href="#">Hello!</a></li>
+							<li><a href="#">H1Z1</a></li>
+							<li><a href="#">Paragon</a></li>
+							<li><a href="#">Warframe</a></li>
+						</ul>
+					</div>
+					</section>
+					<section class="col-1-4">
+					<div class="wrap-col">
+						<h4>Address</h4>
+						<ul class="address">
+							<li><span>Country:</span>CN</li>
+							<li><span>City:</span>Cheng Du</li>
+							<li><span>Phone:</span>8 800 154-45-67</li>
+							<li><span>Email:</span><a href="mailto:">1403264381@qq.com</a></li>
+						</ul>
+					</div>
+					</section>
+					<section class="col-1-4">
+					<div class="wrap-col">
+						<h4>Follow Us</h4>
+						<ul id="icons">
+							<li><a href="#"><img src="image/icon1.jpg" alt="">Facebook</a></li>
+							<li><a href="#"><img src="image/icon2.jpg" alt="">Twitter</a></li>
+							<li><a href="#"><img src="image/icon3.jpg" alt="">LinkedIn</a></li>
+							<li><a href="#"><img src="image/icon4.jpg" alt="">Delicious</a></li>
+						</ul>
+					</div>
+					</section>
+					<section class="col-1-4">
+					<div class="wrap-col">
+						<h4>Newsletter</h4>
+						<form id="newsletter" method="post">
+							<div>
+								<div class="wrapper">
+									<input class="input" type="text" value="Type Your Email Here"  onblur="if(this.value=='') this.value='Type Your Email Here'" onfocus="if(this.value =='Type Your Email Here' ) this.value=''" >
+								</div>
+								<a href="#" class="button" onclick="document.getElementById('newsletter').submit()">Subscribe</a>
+							</div>
+						</form>
+					</div>
+					</section>
+				</div>
+			</article>
+		</div>
+	</div>
+<!---->
+<div class="footer">
+<p>调整浏览器窗口大小查看内容变化。</p>
+</div>
+
+</body>
+</html>
